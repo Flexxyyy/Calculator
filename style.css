@@ -11,6 +11,7 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -31,14 +32,7 @@ body {
   font-weight: 700;
 }
 
-.header > span {
-  position: absolute;
-  color: white;
-  right: 0;
-  font-size: 12px;
-  font-weight: 400;
-}
-.answer-tab {
+#answer-tab {
   min-height: 15vh;
   max-height: auto;
   width: 30vw;
@@ -52,7 +46,7 @@ body {
   font-size: 24px;
 }
 
-.function-tab {
+#function-tab {
   min-height: 60vh;
   max-height: auto;
   width: 30vw;
@@ -88,4 +82,52 @@ body {
 
 .blue {
   background-color: hsl(225, 21%, 49%);
+}
+
+.theme-section {
+  position: absolute;
+  left: 0;
+  height: 400px;
+  width: 100px;
+  /* background-color: hsl(224, 36%, 15%); */
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-end-end-radius: 10px;
+  border-start-end-radius: 10px;
+}
+
+#text {
+  /* color: white; */
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px;
+}
+
+#theme1 {
+  background-color: hsl(224, 36%, 15%);
+}
+
+#theme2 {
+  background-color: hsl(268, 71%, 12%);
+}
+
+#theme3 {
+  background-color: hsl(25, 98%, 40%);
+}
+
+.theme {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border: none;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.yellow {
+  color: hsl(52, 100%, 62%);
 }
